@@ -1,5 +1,5 @@
 function createCounter() {
-    let count = 0; // Лічильник
+    let count = 0;
 
     return {
         increment: function() {
@@ -7,13 +7,16 @@ function createCounter() {
         },
         getCount: function() {
             return count;
+        },
+        reset: function() {
+            count = 0;
         }
     };
 }
 
-// Створюємо лічильник
 let counter = createCounter();
-
-counter.increment(); // Збільшуємо на 1
-counter.increment(); // Збільшуємо ще раз
-console.log(counter.getCount()); // Виводить 2
+counter.increment();
+counter.increment();
+console.log(counter.getCount()); // Виведе: 2
+counter.reset();
+console.log(counter.getCount()); // Виведе: 0
