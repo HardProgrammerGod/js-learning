@@ -1,4 +1,4 @@
-class Vehicle {
+/* class Vehicle {
     constructor(type, speed) {
         this.type = type;
         this.speed = speed;
@@ -24,3 +24,4 @@ let myCar = new Car("автомобіль", 220, "Tesla");
 
 console.log(myCar.getDetails());
 console.log(myCar.getCarInfo());
+*/
