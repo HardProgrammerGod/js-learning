@@ -1,4 +1,4 @@
-function createCounter() {
+/* function createCounter() {
     let count = 0;
 
     return {
@@ -20,3 +20,4 @@ counter.increment();
 console.log(counter.getCount()); // Виведе: 2
 counter.reset();
 console.log(counter.getCount()); // Виведе: 0
+*/
