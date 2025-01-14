@@ -2,18 +2,26 @@
 
 /* console.log("Request data...")
 
-setTimeout(() => {
-    console.log("Preparing data...");
+const p = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log("Preparing data...");
 
-    const backEndData = {
+        const backEndData = {
         server:"goi",
         port:2000,
         statuss:"working"
-    }
+     }
+     resolve(backEndData)
+    }, 2000)
+})
 
-    setTimeout(() => {
-        backEndData.modif = true;
-
-        console.log("Data received", backEndData);
-    }, 2000);
-}, 2000); */
+p.then(data => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            data.modif = true;
+            resolve(data)
+        }, 2000)
+    })
+}).then(clientData => {
+    console.log("Data received", clientData);
+}) */
