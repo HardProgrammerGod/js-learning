@@ -1,4 +1,4 @@
-// day 543689348 of learning, i forgot promises
+// day 543689348 of learning, i forgot about the promises
 
 /* console.log("Request data...")
 
